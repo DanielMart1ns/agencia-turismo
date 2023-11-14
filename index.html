@@ -57,10 +57,10 @@
             <!--Carousel-->
             <div id="meus-slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2600">
+                    <div class="carousel-item" data-bs-interval="2600">
                         <img src="images/carousel/paris-carousel.jpg" alt="torre eiffel em Paris na França">
                     </div>
-                    <div class="carousel-item" data-bs-interval="2600">
+                    <div class="carousel-item active" data-bs-interval="2600">
                         <img src="images/carousel/rio-carousel.jpg" alt="Passeio de barco em rio">
                     </div>
                     <div class="carousel-item" data-bs-interval="2600">
@@ -76,8 +76,8 @@
                 </button>
 
                 <div class="carousel-indicators">
-                    <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#meus-slides"></button>
-                    <button type="button" data-bs-slide-to="1" data-bs-target="#meus-slides"></button>
+                    <button type="button" data-bs-slide-to="0" data-bs-target="#meus-slides"></button>
+                    <button type="button" class="active" data-bs-slide-to="1" data-bs-target="#meus-slides"></button>
                     <button type="button" data-bs-slide-to="2" data-bs-target="#meus-slides"></button>
                 </div>
             </div>
@@ -453,6 +453,9 @@
                                 <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
                                 <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
                             </div>
+                            <button type="submit" class="btn fw-bold">
+                                Enviar
+                            </button>
                         </form>
                     </div>
 
@@ -498,6 +501,42 @@
         </section>
     </div>
 
+    <!--Bootstrap-->
     <script src="lib/bootstrap.bundle.min.js"></script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!--Mask-->
+    <script src="lib/jquery.mask.min.js"></script>
+
+    <!--Validate-->
+    <script src="lib/jquery.validate.min.js"></script>
+    <script src="lib/messages_pt_BR.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Aplicando máscara ao input telefone
+            $('#tel').mask('(00) 00000-0000')
+
+            //validate
+            $('form').validate({
+                rules: {
+                    nome:{
+                        required:true
+                    },
+
+                    email:{
+                        required:true,
+                        email:true
+                    },
+
+                    mensagem:{
+                        required:true
+                    }
+                }
+            })
+        })
+    </script>
 </body>
 </html>
