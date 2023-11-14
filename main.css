@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+    font-family: roboto, sans-serif;
+}
+
+/*Header navbar*/
+header{
+    background-color: #8a2be2;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.374);
+}
+
+.navbar-brand,
+.navbar-brand:hover{
+    font-family: agbalumo, pacifico, sans-serif;
+    color: #eeeec7;
+    border-bottom: 1px solid #a085ba;
+}
+
+.navbar-toggler{
+    background-color: #eeeec7;
+}
+
+.nav .nav-link.active,
+.nav .nav-link:hover{
+    background-color: #eeeec7;
+    color: #8a2be2;
+}
+
+.nav .nav-link{
+    color: aliceblue;
+}
+
+/*Id="sobre-nos"*/
+/*Carousel*/
+
+.carousel-item img{
+    height: 500px;
+    width:100%;
+}
+
+/*About*/
+#sobre-nos{
+    background-color: #f5f5dc;
+}
+
+h2, h3{
+    font-family: pacifico, sans-serif;
+}
+
+.text-colored{
+    color: #8a2be2;
+}
+
+/*Id= Pontos-turisticos*/
+
+#pontos-turisticos{
+    background-color: #f5f5dc;
+}
+
+.btn-pontos-turisticos.nav-link.active,
+.btn-pontos-turisticos.nav-link.active:hover
+{
+    background-color: #e15f41;
+    color: #fff;
+}
+
+.btn-pontos-turisticos.nav-link,
+.btn-pontos-turisticos.nav-link:hover
+{
+    color: #e15f41;
+}
+
+.tab-pane img{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.442);
+    cursor: pointer;
+}
+
+h4{
+    color: #e15f41;
+    cursor: pointer;
+}
+
+/*Id= fale-conosco*/
+
+.social-links li{
+    display: inline;
+    list-style: none;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
+

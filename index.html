@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo/balloon-heart.ico" type="image/x-icon">
+    <title>Traveling</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <h1 class="navbar-brand m-0">
+            Traveling
+            <i class="bi bi-balloon-heart-fill ms-1"></i>
+        </h1>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav id="menu" class="collapse navbar-collapse justify-content-end  mt-2">
+            <ul class="nav nav-pills d-block d-md-flex">
+                <li class="nav-item me-md-2">
+                    <a href="#sobre-nos" class="nav-link">
+                        <i class="bi bi-house-heart me-1"></i>
+                        Sobre Nós
+                    </a>
+                </li>
+                <li class="nav-item me-md-2">
+                    <a href="#eventos" class="nav-link">
+                        <i class="bi bi-luggage me-1"></i>
+                        Eventos
+                    </a>
+                </li>
+                <li class="nav-item me-md-2">
+                    <a href="#pontos-turisticos" class="nav-link">
+                        <i class="bi bi-map me-1"></i>
+                        Pontos Turísticos
+                    </a>
+                </li>
+                <li class="nav-item me-md-2">
+                    <a href="#fale-conosco" class="nav-link">
+                        <i class="bi bi-telephone me-1"></i>
+                        Fale Conosco
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="#cabecalho">
+        <section id="sobre-nos">
+            <!--Carousel-->
+            <div id="meus-slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2600">
+                        <img src="images/carousel/paris-carousel.jpg" alt="torre eiffel em Paris na França">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2600">
+                        <img src="images/carousel/rio-carousel.jpg" alt="Passeio de barco em rio">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2600">
+                        <img src="images/carousel/aeroporto-carousel.jpg" alt="aeroporto">
+                    </div>
+                </div>
+
+                <button type="button" class="carousel-control-prev btn-control" data-bs-target="#meus-slides" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next btn-control" data-bs-target="#meus-slides" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#meus-slides"></button>
+                    <button type="button" data-bs-slide-to="1" data-bs-target="#meus-slides"></button>
+                    <button type="button" data-bs-slide-to="2" data-bs-target="#meus-slides"></button>
+                </div>
+            </div>
+
+            <!--About-->
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2>Nosso <span class="text-colored">Espaço</span></h2>
+                    <div class="col-md-5 mt-1">
+                        <img src="images/agencia.jpg" class="d-block w-100 rounded" alt="agencia vista interna">
+                    </div>
+
+                    <div class="col-md-7 mt-md-0 mt-3">
+                        <h2>Sobre <span class="text-colored">Nós</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo excepturi amet quibusdam voluptatem commodi rerum quia perspiciatis aperiam voluptatum. Expedita et aspernatur dicta at quibusdam, provident numquam sit. Ad.</p>
+                        <h2>Nosso <span class="text-colored">Comprometimento</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto molestiae impedit incidunt exercitationem fugit facilis commodi. Non perspiciatis quis nostrum tenetur unde blanditiis, ipsum quas! Ipsa illum at quia tempore!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Events-->
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Fazendo <span class="text-colored">história</span> com você</h2>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/show-eventos.jpg" class="d-block w-100 rounded mb-2" alt="imagem de um show internacional">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-music-note-beamed me-2"></i>
+                            Shows internacionais
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos totam pariatur at iste repellat officia cum molestiae, tenetur libero suscipit atque fugiat delectus nihil sequi expedita! Nulla, ea sed.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/eventos/esportes-eventos.jpg" class="d-block w-100 rounded mb-2" alt="imagem de uma estátua do logo das olimpiada">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-trophy me-2"></i>
+                            Eventos esportivos
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam architecto esse molestias sit. A, reprehenderit! Autem reiciendis nemo nihil fuga at sapiente debitis sequi! Excepturi ducimus recusandae fugit quibusdam porro!</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/eventos/palestras-eventos.jpg" class="d-block w-100 rounded mb-2" alt="auditório para palestras">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            Eventos inovadores
+                        </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, deserunt. Aspernatur enim, illum accusantium ab soluta recusandae nihil fuga. Id dolorum voluptates consectetur saepe odio rerum labore eligendi deserunt debitis.</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <!--Pontos Turísticos-->
+        <section id="pontos-turisticos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Lugares para <span class="text-colored">você</span> visitar</h2>
+                </div>
+
+                <div class="row">
+                    <aside class="col-md-2 mt-3">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" class="nav-link text-start fw-bold btn-pontos-turisticos active" data-bs-target="#americas" data-bs-toggle="tab">
+                                Américas
+                            </button>
+
+                            <button type="button" class="nav-link text-start fw-bold btn-pontos-turisticos" data-bs-target="#europa" data-bs-toggle="tab">
+                                Europa
+                            </button>
+
+                            <button type="button" class="nav-link text-start fw-bold btn-pontos-turisticos" data-bs-target="#africa-oriente-medio" data-bs-toggle="tab">África & Oriente Médio</button>
+
+                            <button type="button" class="nav-link text-start fw-bold btn-pontos-turisticos" data-bs-target="#asia" data-bs-toggle="tab">Ásia</button>
+
+                            <button type="button" class="nav-link fw-bold text-start btn-pontos-turisticos" data-bs-target="#oceania" data-bs-toggle="tab">Oceania</button>
+
+                            <button type="button" class="nav-link text-start fw-bold btn-pontos-turisticos" data-bs-target="#cruzeiros" data-bs-toggle="tab">Cruzeiros</button>
+                        </nav>
+                    </aside>
+
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="americas">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/rio-de-janeiro.jpg" class="d-block w-100" alt="praia do rio de janeiro">
+                                        <h4 class="fw-bold fs-5 mt-1">Rio de Janeiro - Brazil</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/campos-do-jordao.jpg" class="d-block w-100" alt="campos do jordão - SP">
+                                        <h4 class="fw-bold fs-5 mt-1">Campos do Jordão - Brazil</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/vancouver.jpg" class="d-block w-100" alt="cidade de vancouver no Canadá">
+                                        <h4 class="fw-bold fs-5 mt-1">Vancouver - Canadá</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/acapulco.jpg" class="d-block w-100" alt="Praia de Acapulco México">
+                                        <h4 class="fw-bold fs-5 mt-1">Acapulco - México</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/new-york.jpg" class="d-block w-100" alt="cidade de New York">
+                                        <h4 class="fw-bold fs-5 mt-1">New York - EUA</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/buenos-aires.jpg" class="d-block w-100" alt="cidade de Buenos Aiers na Argentina">
+                                        <h4 class="fw-bold fs-5 mt-1">Buenos Aires - Argentina</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/americas/hawaii.jpg" class="d-block w-100" alt="praia do hawaii nos Estados Unidos">
+                                        <h4 class="fw-bold fs-5 mt-1">Hawaii - EUA</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="europa">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/alpes-suicos.jpg" class="d-block w-100" alt="Alpes Suiços na Suiça">
+                                        <h4 class="fw-bold fs-5 mt-1">Alpes Suiços - Suiça</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/barcelona.jpg" class="d-block w-100" alt="cidade de barcelona">
+                                        <h4 class="fw-bold fs-5 mt-1">Barcelona - Espanha</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/londres.jpg" class="d-block w-100" alt="cidade de Londres">
+                                        <h4 class="fw-bold fs-5 mt-1">Londres - Inglaterra</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/museu-louvre.jpg" class="d-block w-100" alt="museu do louvre na França">
+                                        <h4 class="fw-bold fs-5 mt-1">Museu do Louvre - França</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/paris.jpg" class="d-block w-100" alt="cidade de Paris na França">
+                                        <h4 class="fw-bold fs-5 mt-1">Paris - França</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/roma.jpg" class="d-block w-100" alt="Coliseu Itália">
+                                        <h4 class="fw-bold fs-5 mt-1">Roma - Itália</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/europa/veneza.jpg" class="d-block w-100" alt="cidade de Veneza na Itália">
+                                        <h4 class="fw-bold fs-5 mt-1">Veneza - Itália</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="africa-oriente-medio">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/savana.jpg" class="d-block w-100" alt="savana africana">
+                                        <h4 class="fw-bold fs-5 mt-1">Savana Africana - Angola</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/africa-do-sul-centro.jpg" class="d-block w-100" alt="Centro da África do Sul">
+                                        <h4 class="fw-bold fs-5 mt-1">África do Sul Centro - África do Sul</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/deseto-saara.jpg" class="d-block w-100" alt="Deserto do Saara">
+                                        <h4 class="fw-bold fs-5 mt-1">Deserto do Saara - Argélia</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/rio-nilo.jpg" class="d-block w-100" alt="rio nilo no Egito">
+                                        <h4 class="fw-bold fs-5 mt-1">Rio Nilo - Egito</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/piramides.jpg" class="d-block w-100" alt="pirâmides do Egito">
+                                        <h4 class="fw-bold fs-5 mt-1">Pirâmides do Egito - Egito</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/jerusalem.jpg" class="d-block w-100" alt="Jerusalém">
+                                        <h4 class="fw-bold fs-5 mt-1">Jerusalém - Israel</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/dubai.jpg" class="d-block w-100" alt="Cidade de Dubai">
+                                        <h4 class="fw-bold fs-5 mt-1">Dubai - EAU</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/africa-oriente-medio/marrocos.jpg" class="d-block w-100" alt="Cidade do Marrocos">
+                                        <h4 class="fw-bold fs-5 mt-1">Cidade de Marrocos - Marrocos</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="asia">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/tokyo.jpg" class="d-block w-100" alt="Tokyo Japão">
+                                        <h4 class="fw-bold fs-5 mt-1">Tokyo - Japão</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/monte-fuji.jpg" class="d-block w-100" alt="monte fuji no Japão">
+                                        <h4 class="fw-bold fs-5 mt-1">Monte Fuji - Japão</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/shanghai.jpg" class="d-block w-100" alt="cidade de shanghai na China">
+                                        <h4 class="fw-bold fs-5 mt-1">Shanghai - China</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/hong-kong.jpg" class="d-block w-100" alt="centro de Hong-Kong">
+                                        <h4 class="fw-bold fs-5 mt-1">Hong-Kong</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/filipinas.jpg" class="d-block w-100" alt="Cidade em Filipinas">
+                                        <h4 class="fw-bold fs-5 mt-1">Taguig - Filipinas</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/asia/seul.jpg" class="d-block w-100" alt="cidade de Seul na Coréia do Sul">
+                                        <h4 class="fw-bold fs-5 mt-1">Seul - Coréia do Sul</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="oceania">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/oceania/sidney-australia.jpg" class="d-block w-100" alt="cidade de Sidney na Austrália">
+                                        <h4 class="fw-bold fs-5 mt-1">Sidney - Austrália</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/oceania/outback.jpg" class="d-block w-100" alt="deserto do outback">
+                                        <h4 class="fw-bold fs-5 mt-1">Outback - Austrália</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/oceania/new plymounth.jpg" class="d-block w-100" alt="monte na Nova Zelândia">
+                                        <h4 class="fw-bold fs-5 mt-1">New Plymounth - Nova Zelândia</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/oceania/rotorua-nova-zelandia.jpg" class="d-block w-100" alt="águas quentes da Nova Zelândia">
+                                        <h4 class="fw-bold fs-5 mt-1">Rotorua - Nova Zelândia</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="cruzeiros">
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/fernando-de-noronha.jpg" class="d-block w-100" alt="cruzeiro com destino para Fernando de Noronha">
+                                        <h4 class="fw-bold fs-5 mt-1"> Destino - Fernando de Noronha</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/cruzeiro-chile.jpg" class="d-block w-100" alt="cruzeiro com destino para o Chile">
+                                        <h4 class="fw-bold fs-5 mt-1">Destino - Chile</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/cruzeiro-miami.jpg" class="d-block w-100" alt="cruzeiro com destino para Miami nos Estados Unidos">
+                                        <h4 class="fw-bold fs-5 mt-1">Destino - Miami</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/cruzeiro-hawaii.jpg" class="d-block w-100" alt="cruzeiro com destino para o Hawaii">
+                                        <h4 class="fw-bold fs-5 mt-1">Destino - Hawaii</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/cruzeiro-italia.jpg" class="d-block w-100" alt="cruzeiro com destino para a Itália">
+                                        <h4 class="fw-bold fs-5 mt-1">Destino - Itália</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="images/pontos-turisticos/cruzeiros/cruzeiro-dubai.jpg" class="d-block w-100" alt="cruzeiro com destino para o Dubai">
+                                        <h4 class="fw-bold fs-5 mt-1">Destino - Dubai</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mt-3">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Nome:</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-colored">Seu Telefone:</label>
+                                <input type="tel" id="tel" name="tel" class="form-control" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+
+                            <ul class="social-links">
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored ms-1 me-1"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="row mt-4">
+                                <h3 class="text-colored fs-4">
+                                    <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                                </h3>
+
+                                <p>
+                                    Rua Travel, nº 9, Bairro Boot - São Paulo -SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
